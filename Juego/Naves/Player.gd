@@ -21,11 +21,11 @@ func _ready():
 #	pass
 
 ## Metodos
-func _integrate_forces(state: Physics2DDirectBodyState) -> void:
+func _integrate_forces(_state: Physics2DDirectBodyState) -> void:
 	apply_central_impulse(empuje.rotated(rotation))
 	apply_torque_impulse(dir_rotacion * potencia_rotacion)
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	player_input()
 
 ## Metodos Custom
