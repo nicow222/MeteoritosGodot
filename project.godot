@@ -44,9 +44,9 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Meteoritos Juego"
+config/name="Meteoritos"
 run/main_scene="res://Juego/Niveles/NivelTest.tscn"
-config/icon="res://icon.png"
+config/icon="res://icono_juego.png"
 
 [autoload]
 
@@ -99,6 +99,14 @@ disparo_secundario={
 "events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":2,"pressed":false,"doubleclick":false,"script":null)
  ]
 }
+
+[layer_names]
+
+2d_physics/layer_1="player"
+2d_physics/layer_2="enemigo"
+2d_physics/layer_3="meteorito"
+2d_physics/layer_4="proyectil_player"
+2d_physics/layer_5="proyectil_enemigo"
 
 [physics]
 
