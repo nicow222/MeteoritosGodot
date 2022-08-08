@@ -11,9 +11,6 @@ script = ExtResource( 2 )
 [node name="Player" parent="." instance=ExtResource( 1 )]
 gravity_scale = 0.0
 can_sleep = false
-potencia_motor = 20
-potencia_rotacion = 280
-estela_maxima = 150
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = ExtResource( 3 )
