@@ -21,4 +21,8 @@ scale = Vector2( 1.04, 1.12 )
 modulate = Color( 0.709804, 0, 1, 1 )
 scale = Vector2( 2.01518, 0.35429 )
 
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+
+[connection signal="area_entered" from="." to="." method="_on_Proyectil_area_entered"]
 [connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]
+[connection signal="body_entered" from="RigidBody2D" to="." method="_on_RigidBody2D_body_entered"]
