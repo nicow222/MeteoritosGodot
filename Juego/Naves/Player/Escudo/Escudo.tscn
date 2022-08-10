@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Juego/Naves/Player/Escudo/shield_abriendo1.png" type="Texture" id=1]
 [ext_resource path="res://Juego/Naves/Player/Escudo/shield_abriendo2.png" type="Texture" id=2]
 [ext_resource path="res://Juego/Naves/Player/Escudo/shield_completo.png" type="Texture" id=3]
 [ext_resource path="res://Juego/Naves/Player/Escudo/escudo_sound.ogg" type="AudioStream" id=4]
+[ext_resource path="res://Juego/Naves/Player/Escudo/Escudo.gd" type="Script" id=5]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 77.6456
@@ -288,6 +289,7 @@ tracks/5/keys = {
 }
 
 [node name="Escudo" type="Area2D"]
+script = ExtResource( 5 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -6.17349, 0 )
@@ -317,3 +319,5 @@ anims/default = SubResource( 4 )
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
 bus = "SFX"
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
