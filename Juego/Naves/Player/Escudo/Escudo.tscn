@@ -289,6 +289,8 @@ tracks/5/keys = {
 }
 
 [node name="Escudo" type="Area2D"]
+collision_layer = 0
+collision_mask = 16
 script = ExtResource( 5 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -320,4 +322,5 @@ anims/default = SubResource( 4 )
 stream = ExtResource( 4 )
 bus = "SFX"
 
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
