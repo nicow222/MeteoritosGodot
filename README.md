@@ -1,4 +1,4 @@
-$ Meteoritos
+# Videjuego Meteoritos
 
 ***
 Meteoritos es un juego del tipo shmup 2D para PC donde debemos controlar
