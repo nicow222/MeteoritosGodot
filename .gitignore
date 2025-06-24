@@ -10,3 +10,11 @@ export_presets.cfg
 # Mono-specific ignores
 .mono/
 data_*/
+
+# Carpetas extras para ignorar (descomentar según necesidad)
+Build/
+#Documentation
+TemporalAssets
+
+# Vs Code
+.vscode/

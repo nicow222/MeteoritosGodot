@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/DisparoPlayer.ogg-56ff54c804a5ba56287e3e8b3a946a2b.oggstr"
+
+[deps]
+
+source_file="res://Juego/Proyectiles/DisparoPlayer.ogg"
+dest_files=[ "res://.import/DisparoPlayer.ogg-56ff54c804a5ba56287e3e8b3a946a2b.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
